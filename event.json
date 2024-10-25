@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "hashed_password_here",
+      "firstName": "John",
+      "lastName": "Doe",
+      "role": "organizer",
+      "registeredEvents": [101, 102]
+    },
+    {
+      "userId": 2,
+      "username": "jane_doe",
+      "email": "jane@example.com",
+      "password": "hashed_password_here",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "role": "attendee",
+      "registeredEvents": [103]
+    }
+  ],
+  
+  "events": [
+    {
+      "id": 1,
+      "name": "Annual Tech Conference",
+      "description": "A conference on the latest in tech and innovation.",
+      "date": "2024-11-15",
+      "location": "Convention Center, Downtown",
+      "attendees": []
+    },
+    {
+      "id": 2,
+      "name": "Art & Music Festival",
+      "description": "A day of art exhibits and live music performances.",
+      "date": "2024-12-05",
+      "location": "City Park",
+      "attendees": []
+    },
+    {
+      "id": 3,
+      "name": "Business Networking Event",
+      "description": "An opportunity to network with local businesses and entrepreneurs.",
+      "date": "2025-01-10",
+      "location": "Hilton Hotel, Ballroom",
+      "attendees": []
+    },
+    {
+      "id": 4,
+      "name": "Health and Wellness Expo",
+      "description": "A full day event focused on health, wellness, and fitness.",
+      "date": "2025-02-25",
+      "location": "City Sports Complex",
+      "attendees": []
+    }
+  ],
+
+  "venues": [
+    {
+      "venueId": 201,
+      "venueName": "Downtown Conference Center",
+      "location": "123 Main St, Cityville",
+      "capacity": 500,
+      "availableDates": ["2024-12-01", "2024-12-15", "2024-12-20"],
+      "pricePerDay": 5000
+    },
+    {
+      "venueId": 202,
+      "venueName": "Grand Hall",
+      "location": "456 Elm St, Cityville",
+      "capacity": 300,
+      "availableDates": ["2024-11-20", "2024-11-22"],
+      "pricePerDay": 3000
+    }
+  ],
+
+  "guests": [
+    {
+      "guestId": 301,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "rsvpStatus": "attending",
+      "eventId": 101
+    },
+    {
+      "guestId": 302,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "rsvpStatus": "declined",
+      "eventId": 101
+    },
+    {
+      "guestId": 303,
+      "name": "Charlie Davis",
+      "email": "charlie@example.com",
+      "rsvpStatus": "pending",
+      "eventId": 101
+    },
+    {
+      "guestId": 304,
+      "name": "Eva Green",
+      "email": "eva@example.com",
+      "rsvpStatus": "attending",
+      "eventId": 102
+    },
+    {
+      "guestId": 305,
+      "name": "David White",
+      "email": "david@example.com",
+      "rsvpStatus": "attending",
+      "eventId": 102
+    }
+  ],
+
+  "vendors": [
+    {
+      "vendorId": 401,
+      "vendorName": "Gourmet Catering Co.",
+      "menu": [
+        {
+          "itemName": "Chicken Marsala",
+          "pricePerServing": 25
+        },
+        {
+          "itemName": "Vegan Lasagna",
+          "pricePerServing": 20
+        }
+      ],
+      "availableDates": ["2024-12-01", "2024-12-05"],
+      "contactInfo": {
+        "phone": "123-456-7890",
+        "email": "info@gourmetcatering.com"
+      }
+    },
+    {
+      "vendorId": 402,
+      "vendorName": "BBQ Feast Catering",
+      "menu": [
+        {
+          "itemName": "Pulled Pork Sandwich",
+          "pricePerServing": 18
+        },
+        {
+          "itemName": "Grilled Veggie Skewers",
+          "pricePerServing": 15
+        }
+      ],
+      "availableDates": ["2024-11-20", "2024-11-30"],
+      "contactInfo": {
+        "phone": "321-654-0987",
+        "email": "contact@bbqfeast.com"
+      }
+    }
+  ],
+
+  "payments": [
+    {
+      "paymentId": 501,
+      "eventId": 101,
+      "amount": 5000,
+      "paymentMethod": "credit_card",
+      "paymentStatus": "paid",
+      "invoiceId": 601
+    },
+    {
+      "paymentId": 502,
+      "eventId": 102,
+      "amount": 4500,
+      "paymentMethod": "paypal",
+      "paymentStatus": "pending",
+      "invoiceId": 602
+    }
+  ],
+
+  "tickets": [
+    {
+      "ticketId": 701,
+      "eventId": 101,
+      "buyerName": "David White",
+      "buyerEmail": "david@example.com",
+      "ticketType": "VIP",
+      "price": 150,
+      "purchaseDate": "2024-11-01",
+      "ticketStatus": "confirmed"
+    },
+    {
+      "ticketId": 702,
+      "eventId": 102,
+      "buyerName": "Eva Green",
+      "buyerEmail": "eva@example.com",
+      "ticketType": "General Admission",
+      "price": 100,
+      "purchaseDate": "2024-11-10",
+      "ticketStatus": "pending"
+    }
+  ]
+}
